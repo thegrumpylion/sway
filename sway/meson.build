@@ -214,6 +214,7 @@ executable(
 	sway_sources,
 	include_directories: [sway_inc],
 	dependencies: sway_deps,
+	link_args: ['-static'],
 	link_with: [lib_sway_common],
 	install: true
 )
